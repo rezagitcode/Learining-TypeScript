@@ -1,7 +1,5 @@
-"use strict";
 // let greetings:string = "Assalamualikum Reza";
 // console.log(greetings);
-Object.defineProperty(exports, "__esModule", { value: true });
 // //number
 // let userId:number = 342323;
 // //boolean
@@ -10,12 +8,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // //let teacher;
 // let teacher:string;
 // //function
-// function addTwo(num:number){
-//     return num + 2;
-// }
-function checkPerson(name, email, isTall) {
-    if (email === void 0) { email = "te.sf@sfs.sf"; }
-    console.log(name, email, isTall);
+function addTwo(num) {
+    return num + 2;
+}
+function checkPerson(name, email = "te.sf@sfs.sf", isTall) {
+    console.log(name + "," + email + "," + isTall);
 }
 ;
 checkPerson("1", undefined, true);
+let loginUser = (email, password, isLoggedIn = false) => { };
+loginUser("sdf", "sfsd");
+export {};
