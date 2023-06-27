@@ -18,4 +18,13 @@ function checkPerson(name, email = "te.sf@sfs.sf", isTall) {
 checkPerson("1", undefined, true);
 let loginUser = (email, password, isLoggedIn = false) => { };
 loginUser("sdf", "sfsd");
+// This could happen sometimes:
+// let giveMoreThanTen = (num:number):number =>{
+//     if(num>10){
+//         return num;
+//     }
+//     return "less";
+// }
+let fruits = ["apple", "banana", "orange"];
+fruits.map(item => { return `fruit is ${item}`; });
 export {};
