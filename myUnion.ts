@@ -26,4 +26,7 @@ giveId(87);
 
 // let time:230 = 230; more strict
 //tsc.cmd --target es6 --module es6 myUnion.ts
+
+//tuple:
+
 export {}
