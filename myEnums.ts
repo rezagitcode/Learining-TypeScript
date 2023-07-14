@@ -4,4 +4,24 @@ enum Seatchoice {
     MIDDLE,
     WINDOW
 }
-const rzeat = Seatchoice.AISLE;
+// const enum Seatchoice {
+//     AISLE = 10,              -------> for simpler JavaScript.
+//     MIDDLE,
+//     WINDOW
+// }
+
+// const rzeat = Seatchoice.AISLE;
+//interfaces -->
+interface User {
+    readonly dbId:number;
+    email: string;
+    userId: number;
+    googleId?:string;
+    // startTrial:() => string;
+    startTrial(): string;
+    getCoupon(couponname:string):string;
+}
+const reza:User = {dbId:34,email:"r@r.r", userId:123,
+startTrial:()=>{return "trial started"},
+getCoupon:(name:"reza")=>{return "give"}
+};

@@ -1,8 +1,11 @@
 //tsc.cmd --target es6 --module es6 myEnums.ts
-var SeatChoice;
-(function (SeatChoice) {
-    SeatChoice[SeatChoice["AISLE"] = 10] = "AISLE";
-    SeatChoice[SeatChoice["MIDDLE"] = 11] = "MIDDLE";
-    SeatChoice[SeatChoice["WINDOW"] = 12] = "WINDOW";
-})(SeatChoice || (SeatChoice = {}));
-const rzSeat = SeatChoice.AISLE;
+var Seatchoice;
+(function (Seatchoice) {
+    Seatchoice[Seatchoice["AISLE"] = 10] = "AISLE";
+    Seatchoice[Seatchoice["MIDDLE"] = 11] = "MIDDLE";
+    Seatchoice[Seatchoice["WINDOW"] = 12] = "WINDOW";
+})(Seatchoice || (Seatchoice = {}));
+const reza = { dbId: 34, email: "r@r.r", userId: 123,
+    startTrial: () => { return "trial started"; },
+    getCoupon: (name) => { return "give"; }
+};
